@@ -19,4 +19,4 @@ RUN curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-co
         && chmod +x /usr/local/bin/docker-compose \
         && docker-compose --version
 
-CMD dockerd
+CMD "wrapdocker"
