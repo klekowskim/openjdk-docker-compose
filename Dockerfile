@@ -16,3 +16,5 @@ RUN curl -L https://github.com/docker/compose/releases/download/${compose_versio
     && rm -rf /var/lib/apt/lists/*
 
 RUN docker --version && docker-compose --version && java --version
+
+CMD "dockerd"
